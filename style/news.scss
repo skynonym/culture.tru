@@ -1,0 +1,5 @@
+@import "shared";
+
+.hero {
+  @include hero-bg("../img/hero2.jpg");
+}

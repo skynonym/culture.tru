@@ -1,0 +1,45 @@
+@import "shared";
+
+.hero {
+  @include hero-bg("../img/hero2.jpg");
+}
+
+iframe {
+  display: block;
+  margin: auto;
+  width: 700px;
+  height: 400px;
+	transition: width .2s;
+}
+
+#contact {
+  font-family: $font-normal;
+}
+
+.contact__texts {
+  img {
+    margin-right: 10px;
+    vertical-align: baseline;
+  }
+}
+
+@media (max-width: 700px) {
+  iframe {
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  iframe {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  iframe {
+    width: 300px;
+    height: 300px;
+  }
+}

@@ -1,0 +1,12 @@
+@import "shared";
+
+@import "../node_modules/bootstrap/scss/_carousel.scss";
+
+main {
+  min-height: 2000px;
+}
+
+.carousel-item {
+  height: 300px;
+
+}

@@ -695,9 +695,149 @@ html {
 
 main {
   min-height: 2000px;
+  font-family: "Sarabun", sans-serif;
 }
 
-.carousel-item {
+section h2 {
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  section h2 {
+    font-size: 2rem;
+  }
+}
+
+section p {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+  section p {
+    font-size: 1.5rem;
+  }
+}
+
+#top-section {
+  background: #ECECEC;
+}
+
+#pr {
+  padding-bottom: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+  #pr {
+    padding-bottom: 2rem;
+  }
+}
+
+#pr h3 {
+  font-size: calc(1.275rem + 0.3vw);
+  font-weight: 600;
+  color: #6f42c1;
+}
+
+@media (min-width: 1200px) {
+  #pr h3 {
+    font-size: 1.5rem;
+  }
+}
+
+#pr .pr__btn {
+  display: inline-block;
+  background: #91F36F;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: calc(1.275rem + 0.3vw);
+  border-radius: 4px;
+  margin: auto;
+  font-size: calc(1.265rem + 0.18vw);
+}
+
+@media (min-width: 1200px) {
+  #pr .pr__btn {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #pr .pr__btn {
+    font-size: 1.4rem;
+  }
+}
+
+#pr .pr__btn:hover {
+  background: #85e963;
+}
+
+#pr .date {
+  color: #6c757d;
+  display: inline-block;
+}
+
+#pr .date svg {
+  width: 15px;
+  vertical-align: baseline;
+}
+
+#pr .date p {
+  display: inline-block;
+  font-size: calc(1.265rem + 0.18vw);
+}
+
+@media (min-width: 1200px) {
+  #pr .date p {
+    font-size: 1.4rem;
+  }
+}
+
+.activity-title {
+  font-size: calc(1.275rem + 0.3vw);
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  .activity-title {
+    font-size: 1.5rem;
+  }
+}
+
+a {
+  text-decoration: none !important;
+  color: #212529 !important;
+}
+
+#video-carousel .carousel-item {
   height: 300px;
+}
+
+#video-carousel .carousel-item img {
+  height: inherit;
+  margin: auto;
+}
+
+#video-carousel .carousel-control-next,
+#video-carousel .carousel-control-prev {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+button.all {
+  background: #ffc107;
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+  button.all {
+    font-size: 1.5rem;
+  }
+}
+
+button.all:hover {
+  background: #f1b500;
 }
 /*# sourceMappingURL=home.css.map */

@@ -4,9 +4,125 @@
 
 main {
   min-height: 2000px;
+  font-family: $font-normal;
 }
 
-.carousel-item {
-  height: 300px;
+// #first-carousel {
+//   .carousel-item {
+//     max-height: 300px;
+//   }
+// }
+
+
+section {
+  h2 {
+    @include font-size(2rem);
+    font-weight: 600;
+  }
+
+  p {
+    @include font-size(1.5rem);
+
+  }
+}
+
+#top-section {
+  background: $gray-light;
 
 }
+
+// #ข่าวประชาสัมพันธ์
+#pr {
+  @include padding-bottom(2rem);
+
+  h3 {
+    @include font-size(1.5rem);
+    font-weight: 600;
+    // color: $yellow-dark;
+    color: $purple;
+  }
+
+  .pr {
+    &__btn {
+      display: inline-block;
+      background: #91F36F;
+      @include padding-top(0.3rem);
+      @include padding-bottom(0.3rem);
+      @include padding-left(1rem);
+      @include padding-right(1rem);
+      @include font-size(1.5rem);
+      border-radius: 4px;
+      margin: auto;
+      @include font-size(1.4rem);
+
+
+      &:hover {
+        background: #85e963;
+      }
+    }
+  }
+
+  .date {
+    color: $gray-600;
+    display: inline-block;
+
+    svg {
+      width: 15px;
+      vertical-align: baseline;
+    }
+
+    p {
+      display: inline-block;
+      @include font-size(1.4rem);
+
+    }
+  }
+
+}
+
+// #ACTIVITIES-------
+.activity-title {
+  @include font-size(1.5rem);
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none !important;
+  color: #212529 !important;
+}
+
+// #วิดีทัศน์
+#video-carousel {
+  .carousel-item {
+    height: 300px;
+
+    img {
+      // width: 100%;
+      height: inherit;
+			margin: auto;
+    }
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev
+    {
+    filter: invert(100%);
+  }
+}
+
+// #ปุ่ม "ทั้งหมด"
+
+button.all {
+  background: $yellow;
+  @include font-size(1.5rem);
+
+  &:hover {
+    background: $yellow-hover;
+  }
+}
+
+// .book{
+// 	&__row{
+// 		@include margin-top(2rem);
+// }
+// }

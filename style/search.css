@@ -449,4 +449,277 @@ html {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 57, 71, 0.7)), to(rgba(69, 57, 71, 0.9))), url("../img/hero3.jpg") center/cover repeat;
   background: linear-gradient(rgba(69, 57, 71, 0.7), rgba(69, 57, 71, 0.9)), url("../img/hero3.jpg") center/cover repeat;
 }
+
+.search {
+  background: #ECECEC;
+  padding-top: 0;
+  padding-top: calc(1.325rem + 0.9vw);
+  padding-left: calc(1.425rem + 2.1vw);
+  padding-bottom: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+  .search {
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .search {
+    padding-left: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .search {
+    padding-bottom: 2rem;
+  }
+}
+
+form {
+  margin: auto;
+}
+
+form input {
+  display: block;
+  font-size: calc(1.275rem + 0.3vw);
+  margin: auto;
+}
+
+@media (min-width: 1200px) {
+  form input {
+    font-size: 1.5rem;
+  }
+}
+
+form .input {
+  position: relative;
+  display: inline-block;
+  margin-right: calc(1.425rem + 2.1vw);
+}
+
+@media (min-width: 1200px) {
+  form .input {
+    margin-right: 3rem;
+  }
+}
+
+form .input__field {
+  padding-top: calc(1.315rem + 0.78vw);
+  padding-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  background: #D5C5D8;
+  width: 300px;
+  display: inline-block;
+  height: calc(4.5rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+  form .input__field {
+    padding-top: 1.9rem;
+  }
+}
+
+form .input__label {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 1rem;
+  z-index: 1;
+  font-size: calc(1.275rem + 0.3vw);
+  font-family: "Sarabun", sans-serif;
+  color: #463A48;
+  pointer-events: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+@media (min-width: 1200px) {
+  form .input__label {
+    font-size: 1.5rem;
+  }
+}
+
+form .yr-btn {
+  position: relative;
+  display: inline-block;
+}
+
+form .yr-btn .input__field {
+  width: 150px;
+}
+
+form button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: calc(4.5rem + 0.3vw);
+  width: calc(4.5rem + 0.3vw);
+  background: #95549E;
+  border-radius: 4px;
+}
+
+form button:hover {
+  background: #893794;
+}
+
+form button p {
+  margin: 0;
+}
+
+.book-card {
+  margin-top: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+  .book-card {
+    margin-top: 2rem;
+  }
+}
+
+.card h2 {
+  font-size: calc(1.305rem + 0.66vw);
+  font-weight: 600;
+  margin-bottom: calc(1.275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+  .card h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card h2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.book-table {
+  font-size: calc(1.275rem + 0.3vw);
+  margin-bottom: calc(1.275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+  .book-table {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .book-table {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.book-table tr > td:first-child {
+  color: #95549E;
+  padding-right: 0.5rem;
+}
+
+.book-table td {
+  padding-bottom: 0.8rem;
+}
+
+.contents .keywords {
+  color: #6c757d;
+  font-size: 1.2rem;
+}
+
+.btn-abstract {
+  background: #EBC3DB;
+  border-radius: 4px;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: calc(1.375rem + 1.5vw);
+  padding-right: calc(1.375rem + 1.5vw);
+  font-size: calc(1.275rem + 0.3vw);
+  margin-top: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+  .btn-abstract {
+    padding-left: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn-abstract {
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn-abstract {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn-abstract {
+    margin-top: 2rem;
+  }
+}
+
+.btn-abstract:hover {
+  background: #ebb3d4;
+}
+
+.abstract {
+  margin-top: calc(1.275rem + 0.3vw);
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .abstract {
+    margin-top: 1.5rem;
+  }
+}
+
+.abstract.show {
+  display: block;
+}
+
+.btn__container button {
+  margin: auto;
+  background: #ffc107;
+  font-size: calc(1.275rem + 0.3vw);
+  width: 12rem;
+  border-radius: 20px 4px 20px 4px;
+  padding: 0.7rem;
+}
+
+@media (min-width: 1200px) {
+  .btn__container button {
+    font-size: 1.5rem;
+  }
+}
+
+.btn__container button:hover {
+  background: #f1b500;
+}
+
+.book {
+  text-align: center;
+}
+
+.book img {
+  width: 100%;
+}
+
+@media (min-width: 1280px) {
+  form .input__field {
+    height: 50px;
+  }
+  form button {
+    height: 50px;
+    width: 50px;
+  }
+}
 /*# sourceMappingURL=search.css.map */

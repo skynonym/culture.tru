@@ -15,10 +15,82 @@
           <h2>ฐานข้อมูลศิลปะและวัฒนธรรม</h2>
         </div>
       </section>
+      <section class="search">
+        <!-- form starts -->
+        <form action="">
+          <div>
+            <!-- title -->
+            <div class="input">
+              <input type="text" class="input__field" />
+              <span class="input__label">ชื่อแหล่งเรียนรู้</span>
+            </div>
+            <!-- year -->
+            <div class="yr-btn">
+              <div class="input">
+                <input type="text" class="input__field year" />
+                <span class="input__label">ปี พ.ศ.</span>
+              </div>
+              <!-- btn -->
+              <button type="submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="#FEE60C"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+        <!-- form ends -->
+      </section>
+      <section class="contents">
+        <p class="result">ผลการค้นหาทั้งหมด 32 รายการ</p>
+        <div class="card book-card">
+          <div class="card-body row p-4">
+            <div class="col">
+              <h2>
+                แหล่งเรียนรู้ด้านภูมิปัญญาและวัฒนธรรม การทำหัวโขน เศียรพ่อแก่
+                บ้านช่างปั้น อำเภอบ้านหมี่ จังหวัดลพบุรี
+              </h2>
+              <!-- table starts -->
+              <table class="book-table">
+                <tr>
+                  <td>ประเภทแหล่งเรียนรู้ :</td>
+                  <td>อาจารย์ ดร.จุติรัช อนุกูล</td>
+                </tr>
+                <tr>
+                  <td>สถานที่ตั้ง :</td>
+                  <td>อำเภอบ้านหมี่ จังหวัดลพบุรี</td>
+                </tr>
+                <tr>
+                  <td>ปี พ.ศ. :</td>
+                  <td>2564</td>
+                </tr>
+                <tr>
+                  <td>หน่วยงานที่จัดทำ :</td>
+                  <td>Lorem ipsum dolor sit amet.</td>
+                </tr>
+              </table>
+              <!-- end of table -->
+            </div>
+            <div class="row btn__container mt-3">
+              <button class="btn-abstract">รายละเอียด</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- JAVASCRIPT -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script type="module" src="js/global.js"></script>
+    <script src="./js/input.js"></script>
   </body>
 </html>

@@ -9,12 +9,8 @@
 // // 4. Include any optional Bootstrap components as you like
 @import "../node_modules/bootstrap/scss/_reboot.scss";
 @import "../node_modules/bootstrap/scss/_utilities.scss";
-// @import "../node_modules/bootstrap/scss/_nav.scss";
-// @import "../node_modules/bootstrap/scss/_navbar.scss";
-// @import "../node_modules/bootstrap/scss/_dropdown.scss";
-// @import "../node_modules/bootstrap/scss/_containers.scss";
-// @import "../node_modules/bootstrap/scss/_transitions.scss";
-// @import "../node_modules/bootstrap/scss/_type.scss";
+@import "../node_modules/bootstrap/scss/vendor/_rfs.scss";
+
 
 @import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap');
@@ -39,7 +35,9 @@ $purple-middle: #95549E;
 $purple-light: #D5C5D8;
 $pink-light: #EBC3DB;
 $gray-light: #ECECEC;
-
+$yellow-light: #fff4d9;
+$yellow-hover: #f1b500;
+$yellow-dark: #88670d;
 // yellow for btn : $yellow-400;
 // dark gray : $gray-600;
 

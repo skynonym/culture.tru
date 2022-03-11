@@ -15,10 +15,116 @@
           <h2>ฐานข้อมูลศิลปะและวัฒนธรรม</h2>
         </div>
       </section>
+      <section class="search">
+        <!-- form starts -->
+        <form action="">
+          <div>
+            <!-- title -->
+            <div class="input">
+              <input type="text" class="input__field" />
+              <span class="input__label">ชื่อเรื่อง</span>
+            </div>
+            
+            <!-- year -->
+            <div class="yr-btn">
+              <div class="input">
+                <input type="text" class="input__field year" />
+                <span class="input__label">ปีที่พิมพ์</span>
+              </div>
+              <!-- btn -->
+              <button type="submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="#FEE60C"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+        <!-- form ends -->
+      </section>
+      <section class="contents">
+        <p class="result">ผลการค้นหาทั้งหมด 32 รายการ</p>
+        <div class="card book-card">
+          <div class="card-body row p-4">
+            <div class="col-5 col-sm-3 book">
+              <img src="./img/books/2.jpg" alt="" />
+            </div>
+            <div class="col-7 col-sm-9">
+              <h2>
+                การเตรียมพอลิคาร์บอเนตคอมโพสิตที่นำไฟฟ้าเพื่อใช้เป็น
+                ไบโพลาร์เพลตในเซลล์เชื้อเพลิงแบบพีอีเอ็ม = Preparation of
+                electrical conductive polycarbonate composite for bipolar plates
+                in PEM fuel cell / ฐิติพร เพชรอุดม
+              </h2>
+              <!-- table starts -->
+              <table class="book-table">
+                <tr>
+                  <td>ชื่อผู้แต่ง :</td>
+                  <td>อาจารย์ ดร.จุติรัช อนุกูล</td>
+                </tr>
+                <tr>
+                  <td>ปี :</td>
+                  <td>2550</td>
+                </tr>
+                <tr>
+                  <td>จัดพิมพ์โดย :</td>
+                  <td>Lorem ipsum dolor sit amet.</td>
+                </tr>
+              </table>
+              <!-- end of table -->
+              <p class="keywords">คำสำคัญ : ศิลปะ วัฒนธรรม</p>
+              <button class="btn-abstract">บทคัดย่อ &#9660</button>
+							<div class="abstract">
+<p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                ullam earum magni cupiditate nemo, minus voluptate ad nisi
+                suscipit molestiae animi voluptatibus pariatur vero quidem
+                consequuntur ut, sequi dolores omnis voluptatum quasi? Excepturi
+                voluptatem ea nam, eum autem laborum dolor accusamus, mollitia
+                ipsa pariatur quam, consequatur illo? Odit maiores distinctio
+                nostrum numquam nihil ullam voluptatum accusantium iste hic,
+                amet velit quasi quae id nisi, autem, perferendis a! Est
+                laboriosam quidem velit nemo consequatur aliquid labore quisquam
+                sunt molestiae, autem at accusantium, facere eligendi eveniet
+                quasi voluptatem dignissimos voluptates! Dolorem laudantium
+                deserunt, voluptatibus nisi reprehenderit illo est ratione eos
+                fugiat totam voluptas rerum sequi temporibus aut corporis quas
+                ipsam nemo dolore quisquam quam iste! Consequuntur, dolores
+                sapiente magnam, distinctio optio eos iste obcaecati autem
+                corporis ducimus incidunt atque officiis blanditiis quod
+                voluptatum architecto reiciendis dicta voluptatibus ratione iure
+                a harum. Sit porro deleniti hic ullam amet incidunt ipsum, natus
+                ex maxime!
+              </p>
+							</div>
+              
+            </div>
+            <div class="row btn__container mt-3">
+              <button class="btn-abstract">รายละเอียด</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- JAVASCRIPT -->
+		<script>
+			document.querySelector(".btn-abstract").addEventListener("click",()=>{
+				document.querySelector(".abstract").classList.toggle("show");
+			})
+		</script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script type="module" src="js/global.js"></script>
+		    <script src="./js/input.js"></script>
+
   </body>
 </html>

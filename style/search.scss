@@ -3,3 +3,191 @@
 .hero {
   @include hero-bg("../img/hero3.jpg");
 }
+
+.search {
+  background: $gray-light;
+  padding-top: 0;
+  @include padding-top(2rem);
+  @include padding-left(3rem);
+  // @include padding-right(3rem);
+  @include padding-bottom(2rem);
+}
+
+form {
+  margin: auto;
+
+  input {
+    display: block;
+    @include font-size(1.5rem);
+    margin: auto;
+  }
+
+  .input {
+    position: relative;
+    display: inline-block;
+    @include margin-right(3rem);
+
+    &__field {
+      // padding: 1.9rem 1rem .8rem .8rem;
+      @include padding-top(1.9rem);
+      @include padding-bottom(0.8rem);
+      @include padding-left (0.8rem);
+      @include padding-right(1rem);
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+      background: $purple-light;
+      width: 300px;
+      display: inline-block;
+      height: calc(4.5rem + 0.3vw);
+    }
+
+    &__label {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 1rem;
+      z-index: 1;
+      @include font-size(1.5rem);
+      font-family: $font-normal;
+      color: $purple-dark;
+      pointer-events: none;
+      transition: all .2s;
+
+    }
+  }
+
+  .yr-btn {
+    position: relative;
+    display: inline-block;
+
+    .input__field {
+      width: 150px;
+    }
+  }
+
+  // search btn starts-----
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: calc(4.5rem + 0.3vw);
+    width: calc(4.5rem + 0.3vw);
+    background: $purple-middle;
+    border-radius: 4px;
+
+    &:hover {
+      background: #893794;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  // end of search btn-----
+}
+
+// book card starts--------
+.book-card {
+  @include margin-top(2rem);
+}
+
+.card h2 {
+  @include font-size(1.8rem);
+  font-weight: 600;
+  @include margin-bottom(1.5rem);
+}
+
+.book-table {
+  @include font-size(1.5rem);
+  @include margin-bottom(1.5rem);
+
+  tr>td:first-child {
+    color: $purple-middle;
+    padding-right: 0.5rem;
+  }
+
+  td {
+    padding-bottom: 0.8rem;
+  }
+}
+
+.contents .keywords {
+  color: $gray-600;
+  @include font-size(1.2rem);
+}
+
+// end of BOOK CARD--------
+
+// ABSTRACT start--------
+.btn-abstract {
+  background: $pink-light;
+  border-radius: 4px;
+  @include padding-top(0.6rem);
+  @include padding-bottom(0.6rem);
+  @include padding-left(2.5rem);
+  @include padding-right(2.5rem);
+  @include font-size(1.5rem);
+  @include margin-top(2rem);
+
+  &:hover {
+    background: #ebb3d4;
+  }
+}
+
+.abstract {
+  @include margin-top(1.5rem);
+  display: none;
+}
+
+.abstract.show {
+  display: block;
+}
+
+// end of ABSTRACT--------
+
+//MORE DETAIL BTN starts-----
+
+.btn__container {
+  button {
+    margin: auto;
+    background: $yellow;
+    @include font-size(1.5rem);
+    width: 12rem;
+    border-radius: 20px 4px 20px 4px;
+    @include padding(0.7rem);
+
+    &:hover {
+      background: $yellow-hover;
+    }
+  }
+}
+
+.book {
+  text-align: center;
+
+  img {
+    // width: 150px;
+    width: 100%;
+  }
+}
+
+// #MEDIA QUERY---------
+@media (min-width: 1280px) {
+  form {
+    .input {
+
+      &__field {
+        height: 50px;
+      }
+    }
+
+
+    button {
+      height: 50px;
+      width: 50px;
+
+    }
+  }
+}

@@ -1,5 +1,85 @@
 @import "shared";
 
 .hero {
-  @include hero-bg("../img/hero.jpg"); 
+  @include hero-bg("../img/hero.jpg");
+}
+
+// #ประวัติ
+#history {
+  h2 {
+    @include font-size(1.5rem);
+  }
+
+  p {
+    text-indent: 5rem;
+    text-align: justify;
+  }
+
+  li {
+    @include font-size(1.5rem);
+    @include margin-left(5rem);
+  }
+
+  table {
+    @include font-size(1.5rem);
+    width: 400px;
+    margin: auto;
+  }
+}
+
+// #ปรัชญา วิสัยทัศน์ พันธกิจ
+#vision {
+  padding: 0;
+  @include padding-bottom(3rem);
+
+  .highlight {
+    background: $yellow-light;
+    text-align: center;
+    @include padding(5rem);
+
+    h1 {
+      margin-bottom: $spacer*1.5;
+    }
+
+    p {
+      @include font-size(2.5rem);
+    }
+
+    .philosophy p {
+      @include margin-bottom(4rem);
+    }
+  }
+
+  // after วิสัยทัศน์
+  &>div:not(.highlight) {
+    h1 {
+      @include margin-top(3rem);
+    }
+
+    @include padding-left(5rem);
+    @include padding-right(5rem);
+
+    p {
+      @include margin-left(3rem);
+    }
+  }
+}
+
+// #นโยบาย
+#policy-strategy {
+  text-align: center;
+  font-family: $font-normal;
+
+  h1 {
+    margin-bottom: $spacer * 1.5;
+  }
+
+  iframe {
+    width: 70%;
+    height: 600px;
+  }
+
+  .plan {
+    margin-bottom: $spacer * 3;
+  }
 }

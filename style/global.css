@@ -473,8 +473,22 @@ nav li a:hover {
   text-decoration: none !important;
 }
 
+.logo ~ p {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: calc(1.275rem + 0.3vw);
+  text-align: center;
+  margin-bottom: 0px !important;
+  color: #777458;
+}
+
+@media (min-width: 1200px) {
+  .logo ~ p {
+    font-size: 1.5rem;
+  }
+}
+
 body {
-  background: #D5C5D8;
+  background: url("../img/pikul-white.png") repeat, #D5C5D8;
 }
 
 main {
@@ -490,6 +504,10 @@ main {
   text-align: center;
   color: #f8f9fa;
   font-family: "Bai Jamjuree", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .hero .hero-texts {
@@ -508,7 +526,58 @@ main {
 }
 
 .contents {
-  padding: 3rem;
+  padding-top: calc(1.425rem + 2.1vw);
+  padding-bottom: calc(1.425rem + 2.1vw);
+  padding-left: calc(1.625rem + 4.5vw);
+  padding-right: calc(1.625rem + 4.5vw);
+  font-family: "Sarabun", sans-serif;
+  min-height: 300px;
+}
+
+@media (min-width: 1200px) {
+  .contents {
+    padding-top: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contents {
+    padding-bottom: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contents {
+    padding-left: 5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contents {
+    padding-right: 5rem;
+  }
+}
+
+.contents h1 {
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .contents h1 {
+    font-size: 2rem;
+  }
+}
+
+.contents p {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+  .contents p {
+    font-size: 1.5rem;
+  }
 }
 
 footer {

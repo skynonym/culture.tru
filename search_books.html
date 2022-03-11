@@ -15,10 +15,83 @@
           <h2>ฐานข้อมูลศิลปะและวัฒนธรรม</h2>
         </div>
       </section>
+      <section class="search">
+        <!-- form starts -->
+        <form action="">
+          <div>
+            <!-- title -->
+            <div class="input">
+              <input type="text" class="input__field" />
+              <span class="input__label">ชื่อหนังสือ</span>
+            </div>
+
+            <!-- year -->
+            <div class="yr-btn">
+              <div class="input">
+                <input type="text" class="input__field year" />
+                <span class="input__label">ปีที่พิมพ์</span>
+              </div>
+              <!-- btn -->
+              <button type="submit">
+                <!-- <img src="./img/search.png" alt="" /> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="#FEE60C"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+        <!-- form ends -->
+      </section>
+      <section class="contents">
+        <p class="result">ผลการค้นหาทั้งหมด 32 รายการ</p>
+        <div class="card book-card">
+          <div class="card-body row p-4">
+            <div class="col-5 col-sm-3 book">
+              <img src="./img/books/1.jpg" alt="" />
+            </div>
+            <div class="col-7 col-sm-9">
+              <h2>
+                หนังสือศิลปะและวัฒนธรรมการห่อ ของกลุ่มชาติพันธ์ในจังหวัดลพบุรี
+              </h2>
+              <!-- table starts -->
+              <table class="book-table">
+                <tr>
+                  <td>ชื่อผู้แต่ง :</td>
+                  <td>อาจารย์ ดร.จุติรัช อนุกูล</td>
+                </tr>
+                <tr>
+                  <td>ปี :</td>
+                  <td>2550</td>
+                </tr>
+                <tr>
+                  <td>จัดพิมพ์โดย :</td>
+                  <td>Lorem ipsum dolor sit amet.</td>
+                </tr>
+              </table>
+              <!-- end of table -->
+              <p class="keywords">คำสำคัญ :</p>
+            </div>
+            <div class="row btn__container">
+              <button>รายละเอียด</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- JAVASCRIPT -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script type="module" src="js/global.js"></script>
+    <script src="./js/input.js"></script>
   </body>
 </html>

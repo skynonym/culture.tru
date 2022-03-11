@@ -23,16 +23,23 @@ nav {
 .logo {
   font-family: $font-special;
   font-weight: 600;
-  // font-size: $h2-font-size;
   user-select: none;
   color: #776E20 !important;
   text-decoration: none !important;
+
+  &~p {
+    font-family: $font-special;
+    @include font-size(1.5rem);
+    text-align: center;
+    margin-bottom: 0px !important;
+    color: #777458;
+  }
 }
 
 // #MAIN
 
 body {
-  background: $purple-light;
+  background: url("../img/pikul-white.png")repeat, $purple-light;
 }
 
 main {
@@ -48,6 +55,8 @@ main {
   text-align: center;
   color: $light;
   font-family: $font-special;
+  user-select: none;
+
 
   .hero-texts {
     position: relative;
@@ -57,6 +66,7 @@ main {
 
   h1 {
     display: block;
+
   }
 
   h2 {
@@ -65,7 +75,22 @@ main {
 }
 
 .contents {
-  padding: $spacer * 3;
+  @include padding-top(3rem);
+  @include padding-bottom(3rem);
+  @include padding-left(5rem);
+  @include padding-right(5rem);
+  font-family: $font-normal;
+  min-height: 300px;
+
+  h1 {
+    @include font-size(2rem);
+    font-weight: 700;
+    @include margin-bottom(1rem);
+  }
+
+  p {
+    @include font-size(1.5rem);
+  }
 }
 
 // #FOOTER---------------

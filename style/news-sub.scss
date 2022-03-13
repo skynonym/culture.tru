@@ -1,0 +1,111 @@
+@import "global";
+
+h1 {
+  text-align: center;
+}
+
+
+iframe {
+  width: 70%;
+  height: 600px;
+  display: block;
+  margin: auto;
+  @include margin-top(3rem);
+}
+
+div.detail {
+  // @include flex(row, flex-end, center);
+  text-align: right;
+  color: $gray-600;
+  @include margin-top(3rem);
+  @include margin-bottom(3rem);
+
+  p {
+    @include font-size(1.2rem);
+  }
+}
+
+a[href] {
+  text-decoration: none;
+}
+
+.btn-green {
+  width: 90px;
+}
+
+@media (max-width: 500px) {
+  iframe {
+    width: 100%;
+    height: 400px;
+    display: block;
+    margin: auto;
+    @include margin-top(3rem);
+  }
+}
+
+// #ข่าวสาร---------------
+
+.album {
+  h2 {
+    @include font-size(1.7rem);
+    font-weight: 600;
+    @include margin-bottom(1.5rem);
+  }
+
+  .image {
+    cursor: pointer;
+    @include margin-bottom(1.5rem);
+  }
+}
+
+.modal {
+  &__bg {
+		@include flex(row, center,center);
+    background: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1050;
+    top: 0;
+    display: none;
+
+    &.open {
+      display: flex;
+    }
+  }
+
+  &__img-container {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    background: $light;
+    @include padding(1rem);
+    // box-shadow:0px 0px 20px #000 ;
+    // border: solid $light 10px;
+    max-width: 600px;
+    max-height: 100%;
+
+    p {
+      @include custom-btn(#eb3939, #e42828, $light);
+      color: $light;
+      cursor: pointer;
+      width: 70px;
+      font-family: $font-normal;
+      @include margin-top(1rem);
+    }
+  }
+
+  &__img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 85vh;
+	  }
+
+		// .border{
+		// 	padding: 1rem;
+		// 	border: solid $gray-600 1px;
+		// }
+
+
+}

@@ -449,4 +449,50 @@ html {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 57, 71, 0.7)), to(rgba(69, 57, 71, 0.9))), url("../img/hero2.jpg") center/cover repeat;
   background: linear-gradient(rgba(69, 57, 71, 0.7), rgba(69, 57, 71, 0.9)), url("../img/hero2.jpg") center/cover repeat;
 }
+
+h5.activity-title {
+  font-size: calc(1.275rem + 0.3vw);
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+@media (min-width: 1200px) {
+  h5.activity-title {
+    font-size: 1.5rem;
+  }
+}
+
+.btn-yellow {
+  display: block;
+  background: #ffdb70;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: calc(1.275rem + 0.3vw);
+  border-radius: 4px;
+  margin: auto;
+  font-size: calc(1.265rem + 0.18vw);
+  text-decoration: none;
+  color: #212529;
+  text-align: center;
+  width: 90px;
+}
+
+@media (min-width: 1200px) {
+  .btn-yellow {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn-yellow {
+    font-size: 1.4rem;
+  }
+}
+
+.btn-yellow:hover {
+  background: #ffd043;
+  color: #212529;
+}
 /*# sourceMappingURL=news.css.map */

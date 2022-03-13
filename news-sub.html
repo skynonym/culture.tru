@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>สำนักศิลปะและวัฒนธรรม: ข่าวประชาสัมพันธ์</title>
+    <link rel="stylesheet" href="./style/news-sub.css" />
+    <link rel="stylesheet" href="./style/news.css" />
+  </head>
+  <body>
+    <!-- #modal -->
+    <div class="modal__bg">
+      <div class="modal__img-container rounded">
+        <img src="" alt="" class="modal__img rounded" />
+        <p class="btn-closed">ปิด</p>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="hero-texts">
+          <h1 class="display-4">ข่าวประชาสัมพันธ์</h1>
+        </div>
+      </section>
+      <section class="contents">
+        <h1 class="mb-4">
+          โครงการส่งเสริมการบูรณาการองค์ความรู้ด้านศิลปวัฒนธรรมสิ่งแวดล้อมภูมิปัญญาท้องถิ่น
+          เรื่อง “การทำขนมช่อม่วง”
+        </h1>
+        <p class="news__body mb-5">
+          เมื่อวันที่ 21 สิงหาคม 2562 สำนักศิลปะและวัฒนธรรม
+          มหาวิทยาลัยราชภัฏเทพสตรี
+          ได้จัดโครงการส่งเสริมการบูรณาการองค์ความรู้ด้านศิลปวัฒนธรรมสิ่งแวดล้อมภูมิปัญญาท้องถิ่น
+          เรื่อง “การทำขนมช่อม่วง” ณ สำนักศิลปะและวัฒนธรรม
+          มหาวิทยาลัยราชภัฏเทพสตรี โดยได้รับเกียรติจากท่านวิทยากร คือ
+          อาจารย์นิเวศ เผื่อนทิม มีผู้เข้าร่วมกิจกรรมในครั้งนี้ 80 คน
+        </p>
+        <div class="album">
+          <h2>ภาพประกอบ</h2>
+          <div class="row">
+            <!-- IMAGE starts -->
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="card image">
+                <img src="./img/activities/1.jpg" alt="" class="rounded" />
+              </div>
+            </div>
+            <!-- end of IMAGE -->
+            <!-- IMAGE starts -->
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="card image">
+                <img src="./img/activities/2.jpg" alt="" class="rounded" />
+              </div>
+            </div>
+            <!-- end of IMAGE -->
+            <!-- IMAGE starts -->
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="card image">
+                <img src="./img/activities/3.jpg" alt="" class="rounded" />
+              </div>
+            </div>
+            <!-- end of IMAGE -->
+            <!-- IMAGE starts -->
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="card image">
+                <img src="./img/activities/4.jpg" alt="" class="rounded" />
+              </div>
+            </div>
+            <!-- end of IMAGE -->
+            <!-- IMAGE starts -->
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="card image">
+                <img src="./img/activities/5.jpg" alt="" class="rounded" />
+              </div>
+            </div>
+            <!-- end of IMAGE -->
+          </div>
+        </div>
+
+        <a href="news.html" class="btn-green mt-5"> ย้อนกลับ </a>
+      </section>
+    </main>
+    <!-- JAVASCRIPT -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="module" src="js/global.js"></script>
+    <script>
+      const imageCards = document.querySelectorAll(".image");
+      console.log(imageCards);
+      for (const imgCard of imageCards) {
+        imgCard.addEventListener("click", (e) => {
+          const modalBg = document.querySelector(".modal__bg");
+          const modalImg = modalBg.querySelector(".modal__img");
+          modalBg.classList.add("open");
+
+          modalImg.src = e.target.src;
+          modalBg.querySelector(".btn-closed").addEventListener("click", () => {
+            modalBg.classList.remove("open");
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

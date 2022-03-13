@@ -698,6 +698,14 @@ main {
   font-family: "Sarabun", sans-serif;
 }
 
+#first-carousel .carousel-inner {
+  max-height: 350px;
+}
+
+#first-carousel img {
+  width: 100%;
+}
+
 section h2 {
   font-size: calc(1.325rem + 0.9vw);
   font-weight: 600;
@@ -719,7 +727,7 @@ section p {
   }
 }
 
-#top-section {
+#videos {
   background: #ECECEC;
 }
 
@@ -839,5 +847,17 @@ button.all {
 
 button.all:hover {
   background: #f1b500;
+}
+
+@media (max-width: 550px) {
+  #video-carousel .carousel-item {
+    height: 250px;
+  }
+}
+
+@media (max-width: 450px) {
+  #video-carousel .carousel-item {
+    height: 200px;
+  }
 }
 /*# sourceMappingURL=home.css.map */

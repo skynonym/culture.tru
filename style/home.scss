@@ -7,12 +7,16 @@ main {
   font-family: $font-normal;
 }
 
-// #first-carousel {
-//   .carousel-item {
-//     max-height: 300px;
-//   }
-// }
+#first-carousel {
+  .carousel-inner {
+    max-height: 350px;
+  }
 
+  img {
+    width: 100%;
+  }
+
+}
 
 section {
   h2 {
@@ -26,9 +30,12 @@ section {
   }
 }
 
-#top-section {
-  background: $gray-light;
+// #top-section {
+//   background: $gray-light;
+// }
 
+#videos {
+  background: $gray-light;
 }
 
 // #ข่าวประชาสัมพันธ์
@@ -45,7 +52,7 @@ section {
   .pr {
     &__btn {
       display: inline-block;
-      background: #91F36F;
+      background: $green-light;
       @include padding-top(0.3rem);
       @include padding-bottom(0.3rem);
       @include padding-left(1rem);
@@ -77,7 +84,6 @@ section {
 
     }
   }
-
 }
 
 // #ACTIVITIES-------
@@ -99,13 +105,12 @@ a {
     img {
       // width: 100%;
       height: inherit;
-			margin: auto;
+      margin: auto;
     }
   }
 
   .carousel-control-next,
-  .carousel-control-prev
-    {
+  .carousel-control-prev {
     filter: invert(100%);
   }
 }
@@ -121,8 +126,20 @@ button.all {
   }
 }
 
-// .book{
-// 	&__row{
-// 		@include margin-top(2rem);
-// }
-// }
+@media (max-width:550px) {
+  #video-carousel {
+    .carousel-item {
+      height: 250px;
+
+    }
+  }
+}
+
+@media (max-width:450px) {
+  #video-carousel {
+    .carousel-item {
+      height: 200px;
+
+    }
+  }
+}

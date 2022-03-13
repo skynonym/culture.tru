@@ -480,6 +480,24 @@ form {
   margin: auto;
 }
 
+form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 form input {
   display: block;
   font-size: calc(1.275rem + 0.3vw);
@@ -505,7 +523,7 @@ form .input {
 }
 
 form .input__field {
-  padding-top: calc(1.315rem + 0.78vw);
+  padding-top: calc(1.325rem + 0.9vw);
   padding-bottom: 0.8rem;
   padding-left: 0.8rem;
   padding-right: 1rem;
@@ -520,7 +538,7 @@ form .input__field {
 
 @media (min-width: 1200px) {
   form .input__field {
-    padding-top: 1.9rem;
+    padding-top: 2rem;
   }
 }
 
@@ -548,13 +566,33 @@ form .input__label {
 form .yr-btn {
   position: relative;
   display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-form .yr-btn .input__field {
+form select#select-yr {
+  font-size: calc(1.275rem + 0.3vw);
+  font-family: "Sarabun", sans-serif;
+  background: #D5C5D8;
+  padding: 0.8rem;
+  height: calc(4.5rem + 0.3vw);
   width: 150px;
+  margin-right: calc(1.425rem + 2.1vw);
 }
 
-form button {
+@media (min-width: 1200px) {
+  form select#select-yr {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  form select#select-yr {
+    margin-right: 3rem;
+  }
+}
+
+form button[type="submit"] {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -563,13 +601,14 @@ form button {
   width: calc(4.5rem + 0.3vw);
   background: #95549E;
   border-radius: 4px;
+  right: -30px;
 }
 
-form button:hover {
+form button[type="submit"]:hover {
   background: #893794;
 }
 
-form button p {
+form button[type="submit"] p {
   margin: 0;
 }
 
@@ -711,6 +750,10 @@ form button p {
 
 .book img {
   width: 100%;
+}
+
+.filter-option {
+  font-size: 30px;
 }
 
 @media (min-width: 1280px) {

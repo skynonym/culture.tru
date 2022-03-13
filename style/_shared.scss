@@ -38,6 +38,8 @@ $gray-light: #ECECEC;
 $yellow-light: #fff4d9;
 $yellow-hover: #f1b500;
 $yellow-dark: #88670d;
+$green-light: #91F36F;
+$green-dark: #85e963;
 // yellow for btn : $yellow-400;
 // dark gray : $gray-600;
 
@@ -51,8 +53,27 @@ $yellow-dark: #88670d;
 
 @mixin hero-bg($img) {
   background: linear-gradient(hsla(291, 11%, 25%, 0.7), hsla(291, 11%, 25%, 0.9)), url($img) center/ cover repeat;
-  // background: linear-gradient(hsla(290, 13%, 35%, 0.7), hsla(288, 23%, 17%, 0.9)), url(../img/hero.jpg) center/ cover repeat;
+}
 
+@mixin custom-btn($color, $color-hover, $text-color-hover:#212529) {
+  display: block;
+  background: $color;
+  @include padding-top(0.3rem);
+  @include padding-bottom(0.3rem);
+  @include padding-left(1rem);
+  @include padding-right(1rem);
+  @include font-size(1.5rem);
+  border-radius: 4px;
+  margin: auto;
+  @include font-size(1.4rem);
+  text-decoration: none;
+  color: #212529;
+  text-align: center;
+
+  &:hover {
+    background: $color-hover;
+    color: $text-color-hover;
+  }
 }
 
 * {

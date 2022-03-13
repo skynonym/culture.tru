@@ -74,12 +74,14 @@
     margin-bottom: $spacer * 1.5;
   }
 
-  iframe {
-    width: 70%;
-    height: 600px;
-  }
+
 
   .plan {
     margin-bottom: $spacer * 3;
   }
+}
+
+iframe.pdf {
+  width: 70%;
+  height: 600px;
 }

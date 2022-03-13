@@ -638,6 +638,39 @@ footer {
   background: #463A48;
   color: white;
   min-height: 150px;
+  font-family: "Sarabun", sans-serif;
+}
+
+footer h3 {
+  font-size: calc(1.275rem + 0.3vw);
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: solid 0.5px #ffc107;
+}
+
+@media (min-width: 1200px) {
+  footer h3 {
+    font-size: 1.5rem;
+  }
+}
+
+footer li {
+  list-style-type: disc;
+  font-size: calc(1.265rem + 0.18vw);
+}
+
+@media (min-width: 1200px) {
+  footer li {
+    font-size: 1.4rem;
+  }
+}
+
+footer li a {
+  color: #f8f9fa !important;
+}
+
+footer li a:hover {
+  color: #e0e0e0 !important;
 }
 
 @media (max-width: 500px) {
@@ -741,13 +774,6 @@ a[href] {
 
 .album .image {
   cursor: pointer;
-  margin-bottom: calc(1.275rem + 0.3vw);
-}
-
-@media (min-width: 1200px) {
-  .album .image {
-    margin-bottom: 1.5rem;
-  }
 }
 
 .modal__bg {

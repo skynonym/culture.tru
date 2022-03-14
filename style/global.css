@@ -667,6 +667,7 @@ footer li {
 
 footer li a {
   color: #f8f9fa !important;
+  text-decoration: none !important;
 }
 
 footer li a:hover {

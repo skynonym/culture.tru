@@ -10,10 +10,18 @@ function getNav() {
     ["rel", "stylesheet"],
     ["href", "./style/global.css"],
   ]);
+
   const bootstrap = createRootElement("link", null, [
     ["rel", "stylesheet"],
     ["href", "./node_modules/bootstrap/dist/css/bootstrap.min.css"],
   ]);
+
+  const icon = createRootElement("link", null, [
+    ["rel", "icon"],
+    ["href", "./img/logo.png"],
+  ]);
+
+  headElement.append(icon);
   headElement.append(bootstrap);
   headElement.append(styleNav);
 

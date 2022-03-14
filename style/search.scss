@@ -164,18 +164,35 @@ form {
 
 //MORE DETAIL BTN starts-----
 
+.flex {
+  display: flex;
+}
+
 .btn__container {
-  button {
-    margin: auto;
-    background: $yellow;
-    @include font-size(1.5rem);
+  margin: auto;
+
+  a.btn-detail {
+    text-align: center;
+    display: block;
     width: 12rem;
-    border-radius: 20px 4px 20px 4px;
+    margin: auto;
     @include padding(0.7rem);
+    background: $yellow;
+    border-radius: 20px 4px 20px 4px;
+    @include font-size(1.5rem);
+    color: #212529;
+    text-decoration: none;
 
     &:hover {
       background: $yellow-hover;
     }
+  }
+
+  a.btn-detail-page {
+    width: 10rem;
+    display: inline-block !important;
+    @include margin(2rem);
+
   }
 }
 
@@ -188,12 +205,59 @@ form {
   }
 }
 
+.book-detail {
+  img {
+    width: 90%;
+  }
+
+}
 
 .filter-option {
   font-size: 30px;
 }
 
+// #---------------DETAIL---------------
+h1.title {
+  text-align: center;
+}
+
+.book-table-detail-page {
+  @include font-size(1.5rem);
+  @include margin-bottom(1.5rem);
+
+  tr>td:first-child {
+    color: $purple-middle;
+    padding-right: 0.5rem;
+    width: 10rem;
+
+  }
+
+  td {
+    padding-bottom: 0.8rem;
+  }
+
+}
+
+
+.learning-center-table {
+  @include font-size(1.5rem);
+  @include margin-bottom(1.5rem);
+
+  tr>td:first-child {
+    color: $purple-middle;
+    padding-right: 0.5rem;
+    width: 14rem;
+
+  }
+
+  td {
+    padding-bottom: 0.8rem;
+  }
+
+}
+
 // #MEDIA QUERY---------
+
 @media (min-width: 1280px) {
   form {
     .input {

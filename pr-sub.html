@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="./style/news-sub.css" />
   </head>
   <body>
+    <!-- #modal -->
+    <div class="modal__bg">
+      <div class="modal__img-container rounded">
+        <img src="" alt="" class="modal__img rounded" />
+        <p class="btn-closed">ปิด</p>
+      </div>
+    </div>
     <main>
       <section class="hero">
         <div class="hero-texts">
@@ -26,18 +33,147 @@
           - ขนมกล้วย <br />
           - การส่งเสริมเอกลักษณ์การแต่งกายด้วยผ้าไทย
         </p>
-        <iframe src="./files/filenews_1578651090.pdf"></iframe>
-        <div class="detail pdf">
+        <!-- file attachment -->
+        <iframe src="./files/filenews_1578651090.pdf" class="pdf"></iframe>
+
+        <!-- #album -->
+        <div class="album pt-5">
+          <h2>ภาพประกอบ</h2>
+          <div class="row">
+            <!-- IMAGE starts -->
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="image">
+                <img
+                  src="./img/activities/1.jpg"
+                  alt=""
+                  class="rounded img-fluid"
+                />
+              </div>
+            </div>
+            <!-- end of IMAGE -->
+            <!-- IMAGE starts -->
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="image">
+                <img
+                  src="./img/activities/2.jpg"
+                  alt=""
+                  class="rounded img-fluid"
+                />
+              </div>
+            </div>
+            <!-- end of IMAGE -->
+            <!-- IMAGE starts -->
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="image">
+                <img
+                  src="./img/activities/3.jpg"
+                  alt=""
+                  class="rounded img-fluid"
+                />
+              </div>
+            </div>
+            <!-- end of IMAGE -->
+            <!-- IMAGE starts -->
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="image">
+                <img
+                  src="./img/activities/4.jpg"
+                  alt=""
+                  class="rounded img-fluid"
+                />
+              </div>
+            </div>
+            <!-- end of IMAGE -->
+            <!-- IMAGE starts -->
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="image">
+                <img
+                  src="./img/activities/5.jpg"
+                  alt=""
+                  class="rounded img-fluid"
+                />
+              </div>
+            </div>
+            <!-- end of IMAGE -->
+          </div>
+        </div>
+        <!-- #end of album -->
+
+        <!-- #writer + share -->
+        <div class="detail">
           <p>เขียนเมื่อ : 1 มกราคม 2565</p>
           <p>โดย : Lorem ipsum dolor sit amet.</p>
         </div>
+        <!-- *share to social media -->
+        <div class="share">
+          <!-- facebook -->
+          <iframe
+            src="https://www.facebook.com/plugins/share_button.php?href=http://skynonym.lbtech.ac.th/pr-sub.html&layout=button&size=large&width=77&height=28&appId"
+            width="77"
+            height="28"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
 
-        <a href="pr.html" class="btn-green"> ย้อนกลับ </a>
+          <!-- Twitter -->
+          <a
+            href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+            class="twitter-share-button"
+            data-show-count="false"
+            data-size="large"
+            >Tweet</a
+          >
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+          <!-- Line -->
+          <div
+            class="line-it-button"
+            data-lang="en"
+            data-type="share-a"
+            data-env="REAL"
+            data-url="https://developers.line.biz/en/docs/line-social-plugins/install-guide/using-line-share-buttons/"
+            data-color="default"
+            data-size="large"
+            data-count="false"
+            data-ver="3"
+            style="display: none"
+          ></div>
+          <script
+            src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js"
+            async="async"
+            defer="defer"
+          ></script>
+        </div>
+        <!-- #end of writer + shrare -->
+
+        <a href="pr.html" class="btn-yellow mt-4"> ย้อนกลับ </a>
       </section>
     </main>
 
     <!-- JAVASCRIPT -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script type="module" src="js/global.js"></script>
+    <script>
+      const imageCards = document.querySelectorAll(".image");
+      console.log(imageCards);
+      for (const imgCard of imageCards) {
+        imgCard.addEventListener("click", (e) => {
+          const modalBg = document.querySelector(".modal__bg");
+          const modalImg = modalBg.querySelector(".modal__img");
+          modalBg.classList.add("open");
+
+          modalImg.src = e.target.src;
+          modalBg.querySelector(".btn-closed").addEventListener("click", () => {
+            modalBg.classList.remove("open");
+          });
+        });
+      }
+    </script>
   </body>
 </html>

@@ -105,6 +105,9 @@ main {
 .btn-green {
   @include custom-btn($green-light, $green-dark);
 }
+.btn-yellow {
+  @include custom-btn($yellow, $yellow-hover);
+}
 
 
 

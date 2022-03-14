@@ -38,7 +38,14 @@ section {
   background: $gray-light;
 }
 
+
 // #ข่าวประชาสัมพันธ์
+
+.fb-page {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
 #pr {
   @include padding-bottom(2rem);
 
@@ -61,6 +68,7 @@ section {
       border-radius: 4px;
       margin: auto;
       @include font-size(1.4rem);
+      width: 90px;
 
 
       &:hover {
@@ -141,5 +149,10 @@ button.all {
       height: 200px;
 
     }
+  }
+
+  .fb-page {
+    left: 0 !important;
+    transform: translateX(0) !important;
   }
 }

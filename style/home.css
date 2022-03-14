@@ -731,6 +731,12 @@ section p {
   background: #ECECEC;
 }
 
+.fb-page {
+  left: 50% !important;
+  -webkit-transform: translateX(-50%) !important;
+          transform: translateX(-50%) !important;
+}
+
 #pr {
   padding-bottom: calc(1.325rem + 0.9vw);
 }
@@ -764,6 +770,7 @@ section p {
   border-radius: 4px;
   margin: auto;
   font-size: calc(1.265rem + 0.18vw);
+  width: 90px;
 }
 
 @media (min-width: 1200px) {
@@ -858,6 +865,11 @@ button.all:hover {
 @media (max-width: 450px) {
   #video-carousel .carousel-item {
     height: 200px;
+  }
+  .fb-page {
+    left: 0 !important;
+    -webkit-transform: translateX(0) !important;
+            transform: translateX(0) !important;
   }
 }
 /*# sourceMappingURL=home.css.map */

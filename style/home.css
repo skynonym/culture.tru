@@ -761,7 +761,7 @@ section p {
 
 #pr .pr__btn {
   display: inline-block;
-  background: #91F36F;
+  background: #96d780;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
   padding-left: 1rem;
@@ -786,7 +786,7 @@ section p {
 }
 
 #pr .pr__btn:hover {
-  background: #85e963;
+  background: #83d268;
 }
 
 #pr .date {

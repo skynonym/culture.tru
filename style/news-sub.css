@@ -603,7 +603,7 @@ main {
 
 .btn-green {
   display: block;
-  background: #91F36F;
+  background: #96d780;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
   padding-left: 1rem;
@@ -630,7 +630,7 @@ main {
 }
 
 .btn-green:hover {
-  background: #85e963;
+  background: #7bcf5f;
   color: #212529;
 }
 
